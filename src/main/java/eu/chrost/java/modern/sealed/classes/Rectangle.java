@@ -4,11 +4,18 @@ final class Rectangle extends Shape {
     private final double width;
     private final double height;
 
-    public Rectangle(String name, double width, double height) {
-        super(name);
+    public Rectangle(double width, double height) {
         if (width <= 0 || height <= 0) throw new IllegalArgumentException("Dimensions must be > 0");
         this.width = width;
         this.height = height;
+    }
+
+    public double getWidth() {
+        return width;
+    }
+
+    public double getHeight() {
+        return height;
     }
 
     @Override

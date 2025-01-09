@@ -10,15 +10,12 @@ Przećwiczenie użycia klas zapieczętowanych z uwzględnieniem pól, metod, mod
 **Część 1: Zapieczętowana klasa `Shape` z polami i metodami** 
 
 **Opis zadania:**
-1. Utwórz zapieczętowaną klasę `Shape` z polem:
-- `String name` (zainicjowany w konstruktorze).
-
+1. Utwórz zapieczętowaną klasę `Shape`
+ 
 2. Dodaj metodę abstrakcyjną:
 - `double calculateArea()`.
 
-3. Dodaj finalną metodę:
-- `String getDescription()` (zwracającą opis klasy: "Shape: {name}").
-  **Podklasy:**
+3. W podklasach dodaj:
 - **`Circle`:**
     - Pole `double radius` z walidacją w konstruktorze (wartość > 0).
 
@@ -67,9 +64,15 @@ Przećwiczenie użycia klas zapieczętowanych z uwzględnieniem pól, metod, mod
 **Część 4: Klasy zapieczętowane i `switch`** 
 
 **Opis zadania:**
-1. Użyj klasy `Shape` w metodzie, która oblicza całkowity obszar danego kształtu.
+1. Utworz klasę utilową `ShapeUtils` z statyczną metodą `String describeShape(Shape shape)`, która:
+* Wykorzystuje switch do obsługi różnych typów kształtów.
+* Dla każdego kształtu zwraca opis:
+  * `Circle`: "Circle with radius {radius}".
+  * `Rectangle`: "Rectangle with dimensions {width}x{height}".
+  * `Triangle`: "Triangle with base {base} and height {height}".
+* Obsługuje wartość `null`, zwracając "Unknown shape".
+* Korzysta z arrow labels i pattern matching.
 
-2. Użyj instrukcji `switch` bez klauzuli `default`.
 
 
 ---
