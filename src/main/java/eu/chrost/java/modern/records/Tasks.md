@@ -60,13 +60,3 @@ Utwórz rekord `Person`, który będzie przechowywać dane o osobie:
 
 ---
 
-**Uwagi organizacyjne:**
-1. Czas na realizację: około 90 minut.
-
-2. Uczestnicy mogą pracować indywidualnie lub w parach.
-
-3. Po zakończeniu przeprowadzamy wspólne omówienie.
-
-4. Warto dodać testy jednostkowe, aby przećwiczyć poprawność implementacji.
-
-Czy takie podejście odpowiada? 😊
